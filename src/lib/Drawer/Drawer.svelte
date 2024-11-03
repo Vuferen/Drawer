@@ -3,7 +3,7 @@ import { onMount } from 'svelte';
 import { pointerStore, cssVarStore  } from 'svelte-legos';
 
 export let snapPoints = ["60px", "100% + 20px"]
-export let drawerMinHeight = "20px";
+export let drawerMinHeight = "60px";
 
 const drawerOffset = cssVarStore('--drawer-offset', { initialValue: snapPoints[0] })
 const drawerMouseOffset = cssVarStore('--drawer-mouse-offset', { initialValue: "0px" })
